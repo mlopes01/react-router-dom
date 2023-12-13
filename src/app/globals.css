@@ -13,8 +13,13 @@ body {
 }
 
 body {
+  height: 100vh;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-rows: repeat(4, 1fr) !important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  padding: 20px;
 }

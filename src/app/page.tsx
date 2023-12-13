@@ -1,9 +1,10 @@
 "use client"
 
-import AppRouter from "./routes";
+import DashBoard from "../pages/DashBoard";
+
 
 export default function Home() {
   return (
-    <AppRouter></AppRouter>
+    <DashBoard />
   )
 }

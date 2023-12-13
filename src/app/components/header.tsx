@@ -1,21 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
-import { Link } from "react-router-dom";
-import styles from './Header.module.css'
 
-export function Header() {
+import styles from './Header.module.css'
+import Link from 'next/link';
+
+
+export default function Header() {
     return (
         <header className={styles.header}>
             <div>
                 <span><FontAwesomeIcon icon={faCircleUser} /></span>
                 <p>Nome da Empresa</p>
             </div>
-            <nav className={styles.nav}><Link to="/">Home</Link>
-                <Link to="/perfil">Perfil </Link>
-                <Link to="/login">Login</Link>
-                <Link to="/cadastro">Cadastro </Link>
-                <Link to="/recuperarSenha">RecuperarSenha </Link>
+            <nav className={styles.nav}><Link href="../">Home</Link>
+                <Link href="../profile"> Perfil</Link>
+                <Link href="../login">Login </Link>
+                <Link href="../createLogin"> Cadastro</Link>
+                <Link href="../recoverPassword"> RecuperarSenha</Link>
             </nav>
         </header>
     )

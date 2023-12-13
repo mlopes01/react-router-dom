@@ -1,5 +1,7 @@
-import { Header } from "./components/header"
-import styles from '../page.module.css'
+import '../app/globals.css'
+
+import styles from '../app/page.module.css'
+import Header from '@/app/components/header'
 
 export default function Profile() {
     return (

@@ -1,0 +1,33 @@
+.header {
+    grid-column: 1/2 !important;
+    grid-row: 1/5 !important;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    padding-left: 3rem;
+    font-family: sans-serif !important;
+}
+
+.header>div>span {
+    font-size: 5rem !important;
+}
+
+.header>div {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem !important;
+    text-decoration: none;
+}
+
+.nav :hover {
+    color: rgb(172, 172, 240);
+}
